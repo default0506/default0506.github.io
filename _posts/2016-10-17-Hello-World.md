@@ -5,7 +5,7 @@ title: C++ Class
 
 start this blog with c++ codes.
 
-'''C++
+```C++
 #include <iostream>
 
 using namespace std;
@@ -32,4 +32,4 @@ int main(void)
 
 	return 0;
 }
-'''
+```
