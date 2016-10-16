@@ -6,7 +6,6 @@ title: C++ Class
 start this blog with c++ codes.
 
 '''C++
-#include "stdafx.h"
 #include <iostream>
 
 using namespace std;
@@ -26,7 +25,7 @@ public:
 	}
 };
 
-int _tmain(int argc, _TCHAR* argv[])
+int main(void)
 {
 	USERDATA user = { 10, "Thankyou" };
 	user.Print();
