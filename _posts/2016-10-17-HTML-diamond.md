@@ -5,7 +5,7 @@ title: HTML makes diamond graph
 
 Draw diamond
 
-```HTML PHP
+```HTML
 <!DOCTYPE html>
 <html lang="ko">
 <head>
