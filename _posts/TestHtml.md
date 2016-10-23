@@ -1,0 +1,69 @@
+---
+layout: post;
+title: table;
+---
+
+```HTML
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Column 1</td>
+            <td>Column 2</td>
+            <td>Column 3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">Row 3 Cell 1</td>
+        </tr>
+    </table>
+    <hr />
+    <table border="1">
+        <tr>
+            <td rowspan="4"><img src="22.png" width="110" height="150"/></td>
+            <td colspan="4">이&nbsp;&nbsp;&nbsp;력&nbsp;&nbsp;&nbsp;서</td>
+        </tr>
+        <tr>
+            <td rowspan="2">성명</td>
+            <td rowspan="2">&nbsp;</td>
+            <td colspan="2">주 민 등 록 번 호</td>
+        </tr>
+        <tr>
+            <td colspan="2">&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;생년월일&nbsp;&nbsp;&nbsp;&nbsp;19&nbsp;&nbsp;&nbsp;&nbsp;년&nbsp;&nbsp;&nbsp;&nbsp;월&nbsp;&nbsp;&nbsp;&nbsp;일생&nbsp;&nbsp;(만&nbsp;&nbsp;세)</td>
+        </tr>
+        <tr>
+            <td>주소</td>
+            <td colspan="4">&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="2">연락처</td>
+            <td>집</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">전자우편</td>
+            <td rowspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>핸드폰</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+</body>
+</html>
+```
