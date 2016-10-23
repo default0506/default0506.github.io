@@ -1,0 +1,72 @@
+---
+layout:java
+title:JavaRandomOperation
+---
+
+```java
+import java.util.*;
+
+public class answer4 {
+	public static int Calculate(int n1, int n2, String op){
+		int result;
+		
+		if(op == "+")
+			result = n1+n2;
+		else if(op == "-")
+			result = n1-n2;
+		else
+			result = n1*n2;
+		
+		
+		return result;
+	}
+	
+	
+	public static void main(String[] argv){
+		Scanner scanner = new Scanner(System.in);
+		Random rand = new Random();
+		String quiz;
+		int num1, num2, num3;
+		String operations[] = {"+","-","*"};
+		String op1,op2;
+		int answer = 0;
+		int userInput = 0;
+		
+		while(true){
+			//세 개의 난수 발생
+			num1 = rand.nextInt(9)+1;
+			num2 = rand.nextInt(9)+1;
+			num3 = rand.nextInt(9)+1;
+			
+			//연산자를 랜덤하게 발생
+			op1 = operations[rand.nextInt(3)];
+			op2 = operations[rand.nextInt(3)];
+			
+			//모든 값들을 문자열로 저장
+			quiz = num1+op1+num2+op2+num3;
+			
+			if( ((op1=="+") || (op1=="-")) && (op2 == "*") ) {
+				int temp = Calculate(num2,num3, op2);
+				
+				answer = Calculate(num1, temp, op1);
+			}else{
+				int temp = Calculate(num1, num2, op1);
+				answer = Calculate(temp, num3, op2);
+			}
+			
+			System.out.print(quiz + " ? ");
+			userInput = scanner.nextInt();
+			
+			if(userInput == answer){
+				System.out.println("정답!");
+				break;
+			}else{
+				System.out.println("오답!");
+			}			
+		}
+		
+		
+		scanner.close();		
+	}
+}
+```
